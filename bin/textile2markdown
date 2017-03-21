@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-require "#{File.dirname(__FILE__)}/../lib/textile2markdown.rb"
+require "#{File.dirname(File.realpath(__FILE__))}/../lib/textile2markdown.rb"
 converter = Textile2Markdown.new
 textile_file = ARGV.first
 unless ARGV.size >= 1 && ARGV.size <= 2
